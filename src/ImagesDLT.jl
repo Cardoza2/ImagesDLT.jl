@@ -1,5 +1,9 @@
 module ImagesDLT
 
-greet() = print("Hello World!")
+using Images, FFTW, Plots, Statistics, LinearAlgebra
+
+include("preprocess.jl")
+include("process.jl")
+include("postprocess.jl")
 
 end # module
